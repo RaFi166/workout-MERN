@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const WorkoutForm = () => {
+  // const { name } = useContext(WorkoutContext);
   const [title, setTitle] = useState("");
   const [load, setLoad] = useState("");
   const [reps, setReps] = useState("");
@@ -19,6 +20,7 @@ const WorkoutForm = () => {
       },
     });
     const json = await response.json();
+    
 
     if (!response.ok) {
       setError(json.error);

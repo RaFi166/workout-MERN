@@ -1,9 +1,10 @@
+import { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import { WorkoutContext } from "./Context/WorkoutContext";
 import Home from "./Pages/Home";
 
 // pages & components
-
 function App() {
   return (
     <div className="App">
